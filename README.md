@@ -1,1 +1,1 @@
-# gtp3-jobebot
+# gtp3-jabebot
