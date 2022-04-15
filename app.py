@@ -6,6 +6,7 @@ app = Flask(__name__)
 # if for some reason your conversation with the bot gets weird, change the secret key
 app.config['SECRET_KEY'] = '89djhff9lhkd93'
 
+
 @app.route('/jabebot', methods=['POST'])
 def jabe():
     incoming_msg = request.values['Body']
@@ -16,6 +17,7 @@ def jabe():
     msg = MessagingResponse()
     msg.message(answer)
     return str(msg)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
