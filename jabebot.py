@@ -6,7 +6,7 @@ import openai
 
 
 load_dotenv()
-# openai.api_key = os.getenv("OPENAI_API_KEY")
+
 openai.api_key = "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"
 
 completion = openai.Completion()
